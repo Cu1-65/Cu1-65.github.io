@@ -220,14 +220,14 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body" id="post-body">
               <h2 id="2020牛客国庆集训派对day2-补题"><a href="#2020牛客国庆集训派对day2-补题" class="headerlink" title="2020牛客国庆集训派对day2(补题)"></a>2020牛客国庆集训派对day2(补题)</h2><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/7818#question">2020牛客国庆集训派对day2</a></p>
 <hr>
-<p><strong>C</strong><br><strong>ELI’S CURIOUS MIND</strong> </p>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a><strong>C</strong></h3><p><strong>ELI’S CURIOUS MIND</strong> </p>
 <p>&#8159; 题意很简单,这个题采用了递推的思想,首先,我们要知道,我们只需要求得从1和开始递推的序列数就可以了,当我们从大于3的数开始取,那么由于第二条规则,这个数能取到,那么必能取到1和2中的某一个数,所以一个序列一定是从1和2开始的,其次,增加到第i个试管,那么这些试管混合得到的种类就是i - 2和i - 3的种类和,因为由于第二条规则,我们只需要将每一个原序列再后顺延一位,这样可以发现,当试管数增加为i时,试管混合得到的种类就是i - 2和i - 3的和</p>
 <p>大佬代码</p>
 <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
@@ -246,8 +246,7 @@ LL a[<span class="hljs-number">80</span>];
     <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">7</span>;i&lt;=<span class="hljs-number">76</span>;i++)a[i]=a[i<span class="hljs-number">-2</span>]+a[i<span class="hljs-number">-3</span>];
     <span class="hljs-keyword">while</span>(<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;n)&amp;&amp;n) <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Case #%d: %lld\n&quot;</span>,cas++,a[n]);
 &#125;</code></pre>
-<p><strong>G</strong></p>
-<p><strong>这个就更简单了,就是单纯的计算利润,没啥技巧,或者说用点小技巧还会出问题</strong><del>(万恶的浮点数)</del></p>
+<h3 id="G"><a href="#G" class="headerlink" title="G"></a><strong>G</strong></h3><p><strong>这个就更简单了,就是单纯的计算利润,没啥技巧,或者说用点小技巧还会出问题</strong><del>(万恶的浮点数)</del></p>
 <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cmath&gt;</span></span>
@@ -295,8 +294,7 @@ LL a[<span class="hljs-number">80</span>];
 
 
 
-<p><strong>J</strong></p>
-<p><strong>高精度计算,用python可以,cpp开数组模拟也可以</strong></p>
+<h3 id="J"><a href="#J" class="headerlink" title="J"></a><strong>J</strong></h3><p><strong>高精度计算,用python可以,cpp开数组模拟也可以</strong></p>
 <p><em>(1)</em></p>
 <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
